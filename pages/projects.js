@@ -5,6 +5,18 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "EmergHelp Frontend",
+      description: "Built using React.js, and Tailwind CSS",
+      github: "https://github.com/ericsdo4u/emerghelp.com",
+      demo: "https://emerghelp-com.vercel.app/",
+    },
+     {
+      title: "EmergHelp Backend",
+      description: "Built using Java Spring Boot, postgres and Deployed with Docker and Render",
+      github: "https://github.com/ericsdo4u/emerghelp",
+      demo: "https://emerghelp-latest.onrender.com",
+    },
+    {
       title: "E-Commerce Frontend",
       description: "Built using Next.js, Redux, and Tailwind CSS",
       github: "https://github.com/yourusername/ecommerce-frontend",
@@ -20,13 +32,11 @@ export default function Projects() {
 
   return (
     <div className="max-w-4xl mx-auto p-12">
-      {/* Page Title */}
       <h1 className="text-4xl font-extrabold text-gray-400 text-center">🚀 My Projects</h1>
       <p className="text-lg text-gray-500 text-center mt-4">
         Showcasing my expertise in modern web development
       </p>
 
-      {/* Project Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
         {projects.map((project, index) => (
           <div key={index} className="p-6 border rounded-lg shadow-lg transition-transform hover:scale-105">
@@ -40,7 +50,6 @@ export default function Projects() {
         ))}
       </div>
 
-      {/* Back Button */}
       <div className="mt-10 text-center">
         <button 
           onClick={() => router.back()} 
